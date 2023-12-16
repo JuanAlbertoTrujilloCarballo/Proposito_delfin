@@ -1,3 +1,4 @@
+using System;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Events;
@@ -22,16 +23,30 @@ public class CameraMover : MonoBehaviour
     [SerializeField] 
     private UnityEvent onSceneChanged;
 
-    public void DoMoveCamera()
+    private bool hasReceivedOrder;
+
+    private void Update()
     {
-        var finalPointNoZ = new Vector3(finalPoint.position.x, finalPoint.position.y, cameraToMove.transform.position.z);
-        cameraToMove.transform.DOMove(finalPointNoZ, movementTime).OnStart(onSceneChangingStart.Invoke).OnComplete(onSceneChanged.Invoke).SetDelay(characterMovement.MovementTime + .1f);
+        if (hasReceivedOrder)
+        {
+            if(characterMovement.IsMoving) return;
+            var finalPointNoZ = new Vector3(finalPoint.position.x, finalPoint.position.y, cameraToMove.transform.position.z);
+            cameraToMove.transform.DOMove(finalPointNoZ, movementTime).OnStart(()=>
+                {
+                    onSceneChangingStart.Invoke();
+                    hasReceivedOrder = false;
+                })
+                .OnComplete(()=>
+                {
+                    onSceneChanged.Invoke();
+                    
+                }); 
+        }
     }
 
-    // private void OnTriggerExit2D(Collider2D other)
-    // {
-    //     var finalPointNoZ = new Vector3(finalPoint.position.x, finalPoint.position.y, cameraToMove.transform.position.z);
-    //     cameraToMove.transform.DOMove(finalPointNoZ, movementTime).OnComplete(onSceneChanged.Invoke);
-    // }
+    public void DoMoveCamera()
+    {
+        hasReceivedOrder = true;
+    }
 
 }
