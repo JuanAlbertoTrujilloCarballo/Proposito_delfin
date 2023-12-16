@@ -60,7 +60,6 @@ public class CharacterMovement : MonoBehaviour
         pointToMove.y = transformToMove.position.y;
         pointToMove.z = transformToMove.position.z;
         var step = speed * Time.deltaTime;
-        var distance = Vector3.Distance(pointToMove, transformToMove.position);
         
         
         transformToMove.position = Vector3.MoveTowards(transformToMove.position, pointToMove, step);

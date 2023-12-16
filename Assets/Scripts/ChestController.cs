@@ -21,7 +21,8 @@ public class ChestController : MonoBehaviour
     public void OnMouseDown()
     {
         scroll.SetActive(true);
-     
+        ShowConversation();
+
     }
     public void ShowConversation()
     {
