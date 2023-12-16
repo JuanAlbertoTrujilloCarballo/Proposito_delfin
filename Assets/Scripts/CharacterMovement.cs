@@ -1,23 +1,22 @@
 using System.Collections.Generic;
+using DG.Tweening;
 using Lean.Touch;
 using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
+    public float MovementTime => movementTime;
+    
     [SerializeField] 
     private Transform transformToMove;
 
-    [SerializeField]
-    private float speed;
+    [SerializeField] 
+    private float movementTime;
     private List<LeanFinger> currentDetectedFingersList;
     private LeanFingerFilter leanFingerFilter = new LeanFingerFilter(true);
     int desiredFingerInput = 0;
     private Vector3 pointToMove;
 
-    private void Awake()
-    {
-        pointToMove = transformToMove.position;
-    }
 
     private void Update()
     {
@@ -26,23 +25,11 @@ public class CharacterMovement : MonoBehaviour
     public void DoDetectInputTouch()
     {
         currentDetectedFingersList = leanFingerFilter.UpdateAndGetFingers(true);
-       if (currentDetectedFingersList.Count > 0)
-       {
-            pointToMove = currentDetectedFingersList[0].GetLastWorldPosition(10f);
-            pointToMove.y = transformToMove.position.y;
-            pointToMove.z = transformToMove.position.z;
-           
-       }
-       if(ComparingVectorsStaticClass.AreVectorkEquals(transformToMove.position, pointToMove)) return;
-        transformToMove.position = Vector3.MoveTowards(transformToMove.position, pointToMove, speed * Time.deltaTime);
+        if (currentDetectedFingersList.Count <= 0)  return;
+        pointToMove.x = currentDetectedFingersList[0].GetLastWorldPosition(10f).x;
+        pointToMove.y = transformToMove.position.y;
+        pointToMove.z = transformToMove.position.z;
+        transformToMove.DOMove(pointToMove, movementTime).SetEase(Ease.Linear);
     }
-}
 
-
-public static class ComparingVectorsStaticClass
-{
-    public static bool AreVectorkEquals(Vector3 vectorOne, Vector3 vectorTwo)
-    {
-        return Vector3.SqrMagnitude(vectorOne - vectorTwo) < 0.01f;
-    }
 }
