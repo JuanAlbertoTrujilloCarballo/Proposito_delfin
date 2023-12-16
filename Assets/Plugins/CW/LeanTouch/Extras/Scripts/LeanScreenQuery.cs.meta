@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/PutInInventory.cs.meta
+guid: 2145092d80ee003488201bda4df58aa5
+========
+guid: bebe214b343962245875722341016be2
+>>>>>>>> delfindevelop:Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanScreenQuery.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
