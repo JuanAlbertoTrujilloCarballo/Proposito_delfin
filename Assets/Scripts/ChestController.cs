@@ -5,7 +5,7 @@ using UnityEngine;
 public class ChestController : MonoBehaviour
 {
     private int cont = 0;
-    [SerializeField] private GameObject scroll, firstOpen, secondOpen;
+    [SerializeField] private GameObject scroll, firstOpen, secondOpen, traba;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,12 +21,14 @@ public class ChestController : MonoBehaviour
     public void OnMouseDown()
     {
         scroll.SetActive(true);
+     
     }
     public void ShowConversation()
     {
         if (cont == 0)
         {
             firstOpen.SetActive(true);
+            traba.SetActive(true);
             cont++;
             Debug.Log(cont);
         }
