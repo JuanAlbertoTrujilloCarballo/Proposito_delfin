@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using Lean.Touch;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -12,6 +13,13 @@ public class CharacterMovement : MonoBehaviour
 
     [SerializeField] 
     private float movementTime;
+
+    [SerializeField]
+    UnityEvent onMovementStart;
+
+    [SerializeField]
+    UnityEvent onMovementFinished;
+
     private List<LeanFinger> currentDetectedFingersList;
     private LeanFingerFilter leanFingerFilter = new LeanFingerFilter(true);
     int desiredFingerInput = 0;
@@ -30,6 +38,8 @@ public class CharacterMovement : MonoBehaviour
         pointToMove.y = transformToMove.position.y;
         pointToMove.z = transformToMove.position.z;
         transformToMove.DOMove(pointToMove, movementTime).SetEase(Ease.Linear);
+
+
     }
 
 }
