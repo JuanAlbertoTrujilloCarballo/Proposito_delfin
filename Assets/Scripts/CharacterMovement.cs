@@ -1,9 +1,6 @@
-using System;
 using System.Collections.Generic;
-using DG.Tweening;
 using Lean.Touch;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class CharacterMovement : MonoBehaviour
 {

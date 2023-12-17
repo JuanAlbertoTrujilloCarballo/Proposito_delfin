@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9ca1bae6d62d3143900bfb205b8852e, type: 3}
+  m_Name: DialoguesContainer
+  m_EditorClassIdentifier: 
+  dialogueDataList:
+  - dialogueStringID: Bored
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: "Another boring night watching the temple\u2026 "
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Chest
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: Oh! What is that box/chest? I have never seen it before.
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Singer
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: "Oh, dear\u2026 I have always wanted to be a great singer."
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: TerribleVoice
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: "I spend all my time singing when I\u2019m at work since
+      no one can hear me here, but I know I have a terrible voice."
+    waitingTime: 3
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Wonderful
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: "Wouldn\u2019t it be wonderful if only the legend was
+      true\u2026 but that\u2019s all it is, a legend. I\u2019ll use this hairpin,
+      it\u2019s really pretty!"
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Shift
+    dialogueSourceSprite: {fileID: -254514442, guid: 73163f791270fab41b514af46e007c4b, type: 3}
+    dialogueContentString: 'Hey, Yami! How is your shift going? '
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Busy
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: Hi, Arai. Well, good. Same old boring shift. What about
+      you, is it busy today?
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: HeadAche
+    dialogueSourceSprite: {fileID: -254514442, guid: 73163f791270fab41b514af46e007c4b, type: 3}
+    dialogueContentString: Not much, but I have this headache that is killing me.
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: GoodNews
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: Hey, Arai! I have good news for you. I have some pills
+      for your headache.
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Grateful
+    dialogueSourceSprite: {fileID: -254514442, guid: 73163f791270fab41b514af46e007c4b, type: 3}
+    dialogueContentString: "Yami! I\u2019m so grateful\u2026 Here, have this lipstick.
+      I found it while I was cleaning and it looks like it hasn\u2019t been used.
+      It\u2019s a really pretty shade, I\u2019m sure it will suit you."
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Enormous
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: "That door is enormous\u2026 Where will it lead? It\u2019s
+      always locked."
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Gloomy
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: "This restroom is so gloomy\u2026"
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Scared
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: 'You scared me! Who are you?! What are you doing here?! '
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Time
+    dialogueSourceSprite: {fileID: -593294990, guid: d59fde4e607e5c04e9ea070b8ad3cab6, type: 3}
+    dialogueContentString: "Oh, I\u2019m s-sorry, are you the nightguard? I think
+      I fell asleep when I came to the restroom earlier\u2026 What time is it? "
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Morning
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: "Yes, I am. It\u2019s 3 in the morning."
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Bus
+    dialogueSourceSprite: {fileID: -593294990, guid: d59fde4e607e5c04e9ea070b8ad3cab6, type: 3}
+    dialogueContentString: "What?! My bus won\u2019t be here until 7\u2026 Maybe
+      it is too much to ask, but can I stay until my bus leaves?  "
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Order
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: "It\u2019s locked, I think it\u2019s out of order."
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Medicine
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: Look, some headache medicine! I should give it to Arai
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Beautiful
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: 'What was that? It seems to come from the room where the
+      beautiful tapestry was. I should go take a look. '
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Real
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: "W-what? This can\u2019t be real!"
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Talk
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: Come closer, my daughter, I want to talk to you.
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Think
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: "Are you\u2026 are you who I think you are? "
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Souls
+    dialogueSourceSprite: {fileID: -254514442, guid: 73163f791270fab41b514af46e007c4b, type: 3}
+    dialogueContentString: "Yes, daughter, I am Yuen, goddess of music and colors,
+      as well as the protector of pure souls. It\u2019s been almost a century since
+      a mortal deserved to visit me. Such a long time\u2026"
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Souls
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: "I-I almost thought that you were nothing but an old legend,
+      my goddess\u2026 I must be dreaming\u2026"
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Important
+    dialogueSourceSprite: {fileID: 634977, guid: d4702ad8e0f15eb45a1f6cbea0942140, type: 3}
+    dialogueContentString: "No, you\u2019re not, my daughter. I am as real as life
+      itself. I have something very important to tell you. "
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Good
+    dialogueSourceSprite: {fileID: 634977, guid: d4702ad8e0f15eb45a1f6cbea0942140, type: 3}
+    dialogueContentString: "You see, my daughter\u2026 I have been hearing you most
+      nights singing among the rooms of this temple, sad and lonely, longing for
+      a beautiful voice. As you know, I have the power to bestow this blessing upon
+      you. After seeing your good actions and your generous heart, I have decided
+      you deserve this gift: from now on, you will sing like an angel. Value this
+      blessing, my daughter, and may it always bring joy to your life and to the
+      lives of the ones around you. "
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Believe
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: "I can\u2019t believe this\u2026 Thank you, goddess Yuen,
+      thank you so much! "
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Bad
+    dialogueSourceSprite: {fileID: 634977, guid: d4702ad8e0f15eb45a1f6cbea0942140, type: 3}
+    dialogueContentString: "You see, my daughter\u2026 I have been hearing you most
+      nights singing among the rooms of this temple, sad and lonely, longing for
+      a beautiful voice. You have always believed in me, so I decided to grant you
+      the opportunity of earning this gift. However, I have seen your bad actions
+      and words. You have dared to take my relics with your poisonous heart! I know
+      your faith is firm, but I can\u2019t give you what you crave. "
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
+  - dialogueStringID: Disappoint
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: "I\u2019m sorry to disappoint you, goddess Yuen\u2026
+      I\u2019m so sorry\u2026 From now on, I will work hard to prove to you that
+      I am worthy of receiving your blessing. "
+    waitingTime: 0
+    specialDialogueSprite: {fileID: 0}
