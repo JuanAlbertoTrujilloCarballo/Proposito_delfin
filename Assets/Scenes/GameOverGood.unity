@@ -595,7 +595,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 820934622}
         m_TargetAssemblyTypeName: PlayGame, Assembly-CSharp
-        m_MethodName: playGame
+        m_MethodName: exitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -700,8 +700,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Has Perdido.\nPero no es el final del viaje, a\xFAn puedes volver a intentarlo,
-    o si de verdad quieres, puedes rendirte"
+  m_text: "Thank you for helping me, player! Now I\u2019ve got a lovely voice and
+    I am a full-time singer!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7e115d9269e6b9e41b63ea40d403a981, type: 2}
   m_sharedMaterial: {fileID: -6822318929640505037, guid: 7e115d9269e6b9e41b63ea40d403a981, type: 2}
