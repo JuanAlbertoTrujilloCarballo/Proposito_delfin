@@ -36,6 +36,8 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] 
     private UnityEvent onDialogueDectivated;
 
+    private DialogueData currentDialogue;
+    
     private int index;
 
     private void Awake()
@@ -45,10 +47,10 @@ public class DialogueSystem : MonoBehaviour
 
     public void DoSendKeyToContainer(string key)
     {
-        var dialogue = GetDialogue(key);
-        textToShow.SetText(dialogue.DialogueContentString);
-        talkerProfile.sprite = dialogue.DialogueSourceSprite;
-        StartCoroutine(WaitForTime(dialogue.WaitingTime, dialogue.OnWaitingDialogue.Invoke, dialogue.OnStopWaitingTime.Invoke));
+        currentDialogue = GetDialogue(key);
+        textToShow.SetText(currentDialogue.DialogueContentString);
+        talkerProfile.sprite = currentDialogue.DialogueSourceSprite;
+        StartCoroutine(WaitForTime(currentDialogue.WaitingTime, currentDialogue.OnWaitingDialogue.Invoke, currentDialogue.OnStopWaitingTime.Invoke));
     }
 
     public void NextDialogue()
@@ -68,6 +70,7 @@ public class DialogueSystem : MonoBehaviour
         if (index >= keysToShowList.Count)
         {
             TurnOffDialogues();
+            currentDialogue.OnThisDialogueClosedTheConversation.Invoke();
             return;
         }
         DoSendKeyToContainer(keysToShowList[index]);
@@ -119,7 +122,9 @@ public class DialogueData
     //
      public UnityEvent OnStopWaitingTime => onStopWaitingTime;
 
-    [SerializeField]
+     public UnityEvent OnThisDialogueClosedTheConversation => onThisDialogueClosedTheConversation;
+
+     [SerializeField]
     private string dialogueStringID; 
     
     [SerializeField] 
@@ -139,7 +144,10 @@ public class DialogueData
     
     [SerializeField]
     private UnityEvent onStopWaitingTime;
-    
+
+    [SerializeField] 
+    private UnityEvent onThisDialogueClosedTheConversation;
+
 
 
 }
