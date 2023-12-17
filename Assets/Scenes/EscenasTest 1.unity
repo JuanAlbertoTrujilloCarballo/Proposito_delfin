@@ -4705,6 +4705,68 @@ MonoBehaviour:
     onThisDialogueClosedTheConversation:
       m_PersistentCalls:
         m_Calls: []
+  - dialogueStringID: Tapestry
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: This is an old tapestry from the days where it was still
+      home to the monks who worshiped Yuen with their beautiful singing voices. The
+      contributions from the visitors grew bigger, but so did the greed of the singers.
+      The richer they grew, the fewer singers remained. My granny, a superb mezzo,
+      was a child when the last solo singer died. Ever since, the temple has been
+      nothing but a tourist attraction.
+    waitingTime: 0
+    onWaitingDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+    onStopWaitingTime:
+      m_PersistentCalls:
+        m_Calls: []
+    onThisDialogueClosedTheConversation:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueStringID: Statue
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: This is a statue depicting goddess Yuen, the deity who
+      lives in this temple and the one who the poem I found is about. Being the wanna-be
+      singer I am, I have a great devotion to Yuen. No doubt my granny was highly
+      influential on that.
+    waitingTime: 0
+    onWaitingDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+    onStopWaitingTime:
+      m_PersistentCalls:
+        m_Calls: []
+    onThisDialogueClosedTheConversation:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueStringID: Lipstick
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: "Well, yeah\u2026 have a good one. By the way, here\u2019s
+      some old lipstick I found while I was cleaning. Throw it away or keep it if
+      you want to."
+    waitingTime: 0
+    onWaitingDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+    onStopWaitingTime:
+      m_PersistentCalls:
+        m_Calls: []
+    onThisDialogueClosedTheConversation:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueStringID: Great
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: That would be great! Thanks a lot, Yami.
+    waitingTime: 0
+    onWaitingDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+    onStopWaitingTime:
+      m_PersistentCalls:
+        m_Calls: []
+    onThisDialogueClosedTheConversation:
+      m_PersistentCalls:
+        m_Calls: []
   dialogueUIContainer: {fileID: 773757646}
   messageButton: {fileID: 773757648}
   talkerProfile: {fileID: 627411732}
@@ -6964,6 +7026,50 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6666227201879929468, guid: 00a8f2c0e2e4d8c448a1c234d155ffa0, type: 3}
   m_PrefabInstance: {fileID: 877793856}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1405028509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1405028511}
+  - component: {fileID: 1405028510}
+  m_Layer: 0
+  m_Name: PlayerPrefbsSaver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1405028510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405028509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e23c69ca418ddd44c816047435eb06ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1405028511
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405028509}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1417263209
 GameObject:
   m_ObjectHideFlags: 0
@@ -8257,9 +8363,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 285593252}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
+      - m_Target: {fileID: 1984029857}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8267,12 +8373,24 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1984029857}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 906543477}
+        m_TargetAssemblyTypeName: DialogueSystem, Assembly-CSharp
+        m_MethodName: DoSendKeyToContainerAndEnableDialogueSystem
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Great
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1405028510}
+        m_TargetAssemblyTypeName: DecisionsSaver, Assembly-CSharp
+        m_MethodName: SaveDecisionOneGood
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9601,7 +9719,6 @@ GameObject:
   - component: {fileID: 2122749500}
   - component: {fileID: 2122749499}
   - component: {fileID: 2122749498}
-  - component: {fileID: 2122749501}
   m_Layer: 5
   m_Name: AnswerOne
   m_TagString: Untagged
@@ -9673,18 +9790,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 285593252}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 1984029857}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -9706,7 +9811,19 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Bored
+          m_StringArgument: Lipstick
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1405028510}
+        m_TargetAssemblyTypeName: DecisionsSaver, Assembly-CSharp
+        m_MethodName: SaveDecisionOneBad
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2122749499
@@ -9747,23 +9864,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122749496}
   m_CullTransparentMesh: 1
---- !u!114 &2122749501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2122749496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 916bc2e674984635b6ab723dfb0bdcb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  keysToShowList:
-  - Shift
-  - Busy
-  - HeadAche
-  dialogueSystem: {fileID: 906543477}
 --- !u!1 &2133599926
 GameObject:
   m_ObjectHideFlags: 0
@@ -9895,3 +9995,4 @@ SceneRoots:
   - {fileID: 777630061}
   - {fileID: 559297891}
   - {fileID: 1622369672}
+  - {fileID: 1405028511}

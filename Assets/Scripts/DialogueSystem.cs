@@ -47,11 +47,16 @@ public class DialogueSystem : MonoBehaviour
     
     public void DoSendKeyToContainerAndEnableDialogueSystem(string key)
     {
-        dialogueUIContainer.SetActive(true);
-        currentDialogue = GetDialogue(key);
-        textToShow.SetText(currentDialogue.DialogueContentString);
-        talkerProfile.sprite = currentDialogue.DialogueSourceSprite;
-        StartCoroutine(WaitForTime(currentDialogue.WaitingTime, currentDialogue.OnWaitingDialogue.Invoke, currentDialogue.OnStopWaitingTime.Invoke));
+        // dialogueUIContainer.SetActive(true);
+        // currentDialogue = GetDialogue(key);
+        // textToShow.SetText(currentDialogue.DialogueContentString);
+        // talkerProfile.sprite = currentDialogue.DialogueSourceSprite;
+        // StartCoroutine(WaitForTime(currentDialogue.WaitingTime, currentDialogue.OnWaitingDialogue.Invoke, currentDialogue.OnStopWaitingTime.Invoke));
+        
+        keysToShowList.Clear();
+        keysToShowList.Add(key);
+        index = 0;
+        TurnOnDialogues();
     }
 
     public void DoSendKeyToContainer(string key)
