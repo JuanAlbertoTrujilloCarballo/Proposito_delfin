@@ -36,9 +36,6 @@ public class DecisionsSaver : MonoBehaviour
 
     public void DoJudge()
     {
-        SaveDecisionOneGood();
-        SaveDecisionTwoGood();
-        
         int goodOptionOne = PlayerPrefs.GetInt("DecisionOne");
         int goodOptionTwo = PlayerPrefs.GetInt("DecisionTwo");
         if (goodOptionOne <= 0 || goodOptionTwo <= 0)
