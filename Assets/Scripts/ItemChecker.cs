@@ -4,9 +4,6 @@ using UnityEngine.Events;
 
 public class ItemChecker : MonoBehaviour
 {
-    [SerializeField]
-    private List<GameObject> pickedItemsList;
-
     [SerializeField] 
     private List<GameObject> posibleListOne;
     
@@ -23,15 +20,6 @@ public class ItemChecker : MonoBehaviour
 
     public void CheckIfItemsPicked()
     {
-        for (int i = 0; i < pickedItemsList.Count; i++)
-        {
-            if (!pickedItemsList[i].activeInHierarchy)
-            {
-                hasPickedAll = false;
-                break;
-            }
-        }
-
         hasPickedAll = true;
 
         bool isAnyOfThemActive = false;
