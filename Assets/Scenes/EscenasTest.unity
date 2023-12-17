@@ -4210,6 +4210,9 @@ MonoBehaviour:
     onStopWaitingTime:
       m_PersistentCalls:
         m_Calls: []
+    onThisDialogueClosedTheConversation:
+      m_PersistentCalls:
+        m_Calls: []
   - dialogueStringID: Chest
     dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
     dialogueContentString: Oh! What is that box/chest? I have never seen it before.
@@ -4220,6 +4223,9 @@ MonoBehaviour:
     onStopWaitingTime:
       m_PersistentCalls:
         m_Calls: []
+    onThisDialogueClosedTheConversation:
+      m_PersistentCalls:
+        m_Calls: []
   - dialogueStringID: Singer
     dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
     dialogueContentString: "Oh, dear\u2026 I have always wanted to be a great singer."
@@ -4228,6 +4234,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     onStopWaitingTime:
+      m_PersistentCalls:
+        m_Calls: []
+    onThisDialogueClosedTheConversation:
       m_PersistentCalls:
         m_Calls: []
   - dialogueStringID: TerribleVoice
@@ -4289,6 +4298,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+    onThisDialogueClosedTheConversation:
+      m_PersistentCalls:
+        m_Calls: []
   - dialogueStringID: Wonderful
     dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
     dialogueContentString: "Wouldn\u2019t it be wonderful if only the legend was
@@ -4301,6 +4313,9 @@ MonoBehaviour:
     onStopWaitingTime:
       m_PersistentCalls:
         m_Calls: []
+    onThisDialogueClosedTheConversation:
+      m_PersistentCalls:
+        m_Calls: []
   - dialogueStringID: Shift
     dialogueSourceSprite: {fileID: -254514442, guid: 73163f791270fab41b514af46e007c4b, type: 3}
     dialogueContentString: 'Hey, Yami! How is your shift going? '
@@ -4309,6 +4324,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     onStopWaitingTime:
+      m_PersistentCalls:
+        m_Calls: []
+    onThisDialogueClosedTheConversation:
       m_PersistentCalls:
         m_Calls: []
   - dialogueStringID: Busy
@@ -4322,6 +4340,9 @@ MonoBehaviour:
     onStopWaitingTime:
       m_PersistentCalls:
         m_Calls: []
+    onThisDialogueClosedTheConversation:
+      m_PersistentCalls:
+        m_Calls: []
   - dialogueStringID: HeadAche
     dialogueSourceSprite: {fileID: -254514442, guid: 73163f791270fab41b514af46e007c4b, type: 3}
     dialogueContentString: Not much, but I have this headache that is killing me.
@@ -4330,6 +4351,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     onStopWaitingTime:
+      m_PersistentCalls:
+        m_Calls: []
+    onThisDialogueClosedTheConversation:
       m_PersistentCalls:
         m_Calls: []
   - dialogueStringID: GoodNews
@@ -4341,6 +4365,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     onStopWaitingTime:
+      m_PersistentCalls:
+        m_Calls: []
+    onThisDialogueClosedTheConversation:
       m_PersistentCalls:
         m_Calls: []
   - dialogueStringID: Grateful
@@ -4355,6 +4382,9 @@ MonoBehaviour:
     onStopWaitingTime:
       m_PersistentCalls:
         m_Calls: []
+    onThisDialogueClosedTheConversation:
+      m_PersistentCalls:
+        m_Calls: []
   - dialogueStringID: Enormous
     dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
     dialogueContentString: "That door is enormous\u2026 Where will it lead? It\u2019s
@@ -4364,6 +4394,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     onStopWaitingTime:
+      m_PersistentCalls:
+        m_Calls: []
+    onThisDialogueClosedTheConversation:
       m_PersistentCalls:
         m_Calls: []
   - dialogueStringID: Gloomy
@@ -4376,6 +4409,9 @@ MonoBehaviour:
     onStopWaitingTime:
       m_PersistentCalls:
         m_Calls: []
+    onThisDialogueClosedTheConversation:
+      m_PersistentCalls:
+        m_Calls: []
   - dialogueStringID: Scared
     dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
     dialogueContentString: 'You scared me! Who are you?! What are you doing here?! '
@@ -4384,6 +4420,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     onStopWaitingTime:
+      m_PersistentCalls:
+        m_Calls: []
+    onThisDialogueClosedTheConversation:
       m_PersistentCalls:
         m_Calls: []
   - dialogueStringID: Time
@@ -4397,6 +4436,9 @@ MonoBehaviour:
     onStopWaitingTime:
       m_PersistentCalls:
         m_Calls: []
+    onThisDialogueClosedTheConversation:
+      m_PersistentCalls:
+        m_Calls: []
   - dialogueStringID: Morning
     dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
     dialogueContentString: "Yes, I am. It\u2019s 3 in the morning."
@@ -4405,6 +4447,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     onStopWaitingTime:
+      m_PersistentCalls:
+        m_Calls: []
+    onThisDialogueClosedTheConversation:
       m_PersistentCalls:
         m_Calls: []
   - dialogueStringID: Bus
@@ -4418,6 +4463,9 @@ MonoBehaviour:
     onStopWaitingTime:
       m_PersistentCalls:
         m_Calls: []
+    onThisDialogueClosedTheConversation:
+      m_PersistentCalls:
+        m_Calls: []
   - dialogueStringID: Order
     dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
     dialogueContentString: "It\u2019s locked, I think it\u2019s out of order."
@@ -4428,6 +4476,9 @@ MonoBehaviour:
     onStopWaitingTime:
       m_PersistentCalls:
         m_Calls: []
+    onThisDialogueClosedTheConversation:
+      m_PersistentCalls:
+        m_Calls: []
   - dialogueStringID: Medicine
     dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
     dialogueContentString: Look, some headache medicine! I should give it to Arai
@@ -4436,6 +4487,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     onStopWaitingTime:
+      m_PersistentCalls:
+        m_Calls: []
+    onThisDialogueClosedTheConversation:
       m_PersistentCalls:
         m_Calls: []
   - dialogueStringID: Beautiful
@@ -4449,6 +4503,9 @@ MonoBehaviour:
     onStopWaitingTime:
       m_PersistentCalls:
         m_Calls: []
+    onThisDialogueClosedTheConversation:
+      m_PersistentCalls:
+        m_Calls: []
   - dialogueStringID: Real
     dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
     dialogueContentString: "W-what? This can\u2019t be real!"
@@ -4457,6 +4514,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     onStopWaitingTime:
+      m_PersistentCalls:
+        m_Calls: []
+    onThisDialogueClosedTheConversation:
       m_PersistentCalls:
         m_Calls: []
   - dialogueStringID: Talk
@@ -4469,6 +4529,9 @@ MonoBehaviour:
     onStopWaitingTime:
       m_PersistentCalls:
         m_Calls: []
+    onThisDialogueClosedTheConversation:
+      m_PersistentCalls:
+        m_Calls: []
   - dialogueStringID: Think
     dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
     dialogueContentString: "Are you\u2026 are you who I think you are? "
@@ -4477,6 +4540,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     onStopWaitingTime:
+      m_PersistentCalls:
+        m_Calls: []
+    onThisDialogueClosedTheConversation:
       m_PersistentCalls:
         m_Calls: []
   - dialogueStringID: Souls
@@ -4491,6 +4557,9 @@ MonoBehaviour:
     onStopWaitingTime:
       m_PersistentCalls:
         m_Calls: []
+    onThisDialogueClosedTheConversation:
+      m_PersistentCalls:
+        m_Calls: []
   - dialogueStringID: Souls
     dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
     dialogueContentString: "I-I almost thought that you were nothing but an old legend,
@@ -4502,6 +4571,9 @@ MonoBehaviour:
     onStopWaitingTime:
       m_PersistentCalls:
         m_Calls: []
+    onThisDialogueClosedTheConversation:
+      m_PersistentCalls:
+        m_Calls: []
   - dialogueStringID: Important
     dialogueSourceSprite: {fileID: 634977, guid: d4702ad8e0f15eb45a1f6cbea0942140, type: 3}
     dialogueContentString: "No, you\u2019re not, my daughter. I am as real as life
@@ -4511,6 +4583,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     onStopWaitingTime:
+      m_PersistentCalls:
+        m_Calls: []
+    onThisDialogueClosedTheConversation:
       m_PersistentCalls:
         m_Calls: []
   - dialogueStringID: Good
@@ -4529,6 +4604,9 @@ MonoBehaviour:
     onStopWaitingTime:
       m_PersistentCalls:
         m_Calls: []
+    onThisDialogueClosedTheConversation:
+      m_PersistentCalls:
+        m_Calls: []
   - dialogueStringID: Believe
     dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
     dialogueContentString: "I can\u2019t believe this\u2026 Thank you, goddess Yuen,
@@ -4538,6 +4616,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     onStopWaitingTime:
+      m_PersistentCalls:
+        m_Calls: []
+    onThisDialogueClosedTheConversation:
       m_PersistentCalls:
         m_Calls: []
   - dialogueStringID: Bad
@@ -4555,6 +4636,9 @@ MonoBehaviour:
     onStopWaitingTime:
       m_PersistentCalls:
         m_Calls: []
+    onThisDialogueClosedTheConversation:
+      m_PersistentCalls:
+        m_Calls: []
   - dialogueStringID: Disappoint
     dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
     dialogueContentString: "I\u2019m sorry to disappoint you, goddess Yuen\u2026
@@ -4565,6 +4649,43 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     onStopWaitingTime:
+      m_PersistentCalls:
+        m_Calls: []
+    onThisDialogueClosedTheConversation:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueStringID: Tapestry
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: This is an old tapestry from the days where it was still
+      home to the monks who worshiped Yuen with their beautiful singing voices. The
+      contributions from the visitors grew bigger, but so did the greed of the singers.
+      The richer they grew, the fewer singers remained. My granny, a superb mezzo,
+      was a child when the last solo singer died. Ever since, the temple has been
+      nothing but a tourist attraction.
+    waitingTime: 0
+    onWaitingDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+    onStopWaitingTime:
+      m_PersistentCalls:
+        m_Calls: []
+    onThisDialogueClosedTheConversation:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueStringID: Statue
+    dialogueSourceSprite: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    dialogueContentString: This is a statue depicting goddess Yuen, the deity who
+      lives in this temple and the one who the poem I found is about. Being the wanna-be
+      singer I am, I have a great devotion to Yuen. No doubt my granny was highly
+      influential on that.
+    waitingTime: 0
+    onWaitingDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+    onStopWaitingTime:
+      m_PersistentCalls:
+        m_Calls: []
+    onThisDialogueClosedTheConversation:
       m_PersistentCalls:
         m_Calls: []
   dialogueUIContainer: {fileID: 773757646}
