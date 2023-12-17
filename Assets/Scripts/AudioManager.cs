@@ -49,18 +49,29 @@ public class AudioManager : MonoBehaviour
     private void LoadSFXClips()
     {
         // Los recursos (ASSETS) que se cargan en TIEMPO DE EJECUCIÓN DEBEN ESTAR DENTRO de una carpeta denominada /Assets/Resources/SFX
-        sfxClips["Jump"] = Resources.Load<AudioClip>("SFX/Jump");
-        sfxClips["CollectCoin"] = Resources.Load<AudioClip>("SFX/Collect_Coin");
-        sfxClips["Hit"] = Resources.Load<AudioClip>("SFX/Hit");
+        sfxClips["Click"] = Resources.Load<AudioClip>("SFX/Click_para_todo");
+        sfxClips["Equipar"] = Resources.Load<AudioClip>("SFX/Equipar_objeto");
+        sfxClips["Aseo"] = Resources.Load<AudioClip>("SFX/Puerta_Aseo_Transicion");
+        sfxClips["Pasos"] = Resources.Load<AudioClip>("SFX/Bucle_Pasos");
+        
     }
 
     // Método privado para cargar la música de fondo directamente desde las carpetas
     private void LoadMusicClips()
     {
         // Los recursos (ASSETS) que se cargan en TIEMPO DE EJECUCIÓN DEBEN ESTAR DENTRO de una carpeta denominada /Assets/Resources/Music
-        musicClips["MainTheme"] = Resources.Load<AudioClip>("Music/Main_Theme");
-        musicClips["InvincibilityTheme"] = Resources.Load<AudioClip>("Music/Invincibility_Theme");
-        musicClips["LoseALife"] = Resources.Load<AudioClip>("Music/Lost_A_Life");
+        musicClips["FinalCredits"] = Resources.Load<AudioClip>("Music/Bucle_Creditos_Finales");
+        musicClips["VozAngel"] = Resources.Load<AudioClip>("Music/Voz_angelical_Final");
+        musicClips["MenuMusic"] = Resources.Load<AudioClip>("Music/Bucle_Pantalla_InicioStart");
+        musicClips["FinalMalo"] = Resources.Load<AudioClip>("Music/Bucle_Dialogo_Diosa_Final_Malo");
+        musicClips["Dialogos"] = Resources.Load<AudioClip>("Music/Bucle_Dialogos_Normales");
+        musicClips["FinalBueno"] = Resources.Load<AudioClip>("Music/Bucle_Escena_Final");
+        musicClips["BucleGeneral"] = Resources.Load<AudioClip>("Music/Bucle_Fondo_General");
+        musicClips["GameOver"] = Resources.Load<AudioClip>("Music/Bucle_MuerteGameOver");
+        
+            
+
+
     }
 
     // Método de la clase singleton para reproducir efectos de sonido
