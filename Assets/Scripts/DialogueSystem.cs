@@ -44,6 +44,15 @@ public class DialogueSystem : MonoBehaviour
     {
         TurnOnDialogues();
     }
+    
+    public void DoSendKeyToContainerAndEnableDialogueSystem(string key)
+    {
+        dialogueUIContainer.SetActive(true);
+        currentDialogue = GetDialogue(key);
+        textToShow.SetText(currentDialogue.DialogueContentString);
+        talkerProfile.sprite = currentDialogue.DialogueSourceSprite;
+        StartCoroutine(WaitForTime(currentDialogue.WaitingTime, currentDialogue.OnWaitingDialogue.Invoke, currentDialogue.OnStopWaitingTime.Invoke));
+    }
 
     public void DoSendKeyToContainer(string key)
     {
@@ -52,6 +61,7 @@ public class DialogueSystem : MonoBehaviour
         talkerProfile.sprite = currentDialogue.DialogueSourceSprite;
         StartCoroutine(WaitForTime(currentDialogue.WaitingTime, currentDialogue.OnWaitingDialogue.Invoke, currentDialogue.OnStopWaitingTime.Invoke));
     }
+    
 
     public void NextDialogue()
     {
