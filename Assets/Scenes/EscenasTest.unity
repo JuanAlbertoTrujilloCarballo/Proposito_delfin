@@ -6060,6 +6060,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 559297891}
     m_Modifications:
+    - target: {fileID: 1344968083155698732, guid: 17cbb3dc8c7667c47a636e9d82789233, type: 3}
+      propertyPath: keysToShowList.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344968083155698732, guid: 17cbb3dc8c7667c47a636e9d82789233, type: 3}
+      propertyPath: keysToShowList.Array.data[0]
+      value: Really
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344968083155698732, guid: 17cbb3dc8c7667c47a636e9d82789233, type: 3}
+      propertyPath: keysToShowList.Array.data[1]
+      value: Knob
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344968083155698732, guid: 17cbb3dc8c7667c47a636e9d82789233, type: 3}
+      propertyPath: keysToShowList.Array.data[2]
+      value: Microphone
+      objectReference: {fileID: 0}
     - target: {fileID: 1927442024101353460, guid: 17cbb3dc8c7667c47a636e9d82789233, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
@@ -6080,6 +6096,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1269724541}
+    - target: {fileID: 2908597065982008479, guid: 17cbb3dc8c7667c47a636e9d82789233, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3888386328030797633, guid: 17cbb3dc8c7667c47a636e9d82789233, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -6108,6 +6128,26 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Target
       value: 
       objectReference: {fileID: 1518414085}
+    - target: {fileID: 6372440480178008216, guid: 17cbb3dc8c7667c47a636e9d82789233, type: 3}
+      propertyPath: dialogueDataList.Array.size
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 6372440480178008216, guid: 17cbb3dc8c7667c47a636e9d82789233, type: 3}
+      propertyPath: dialogueDataList.Array.data[36].dialogueStringID
+      value: OldMicrophone
+      objectReference: {fileID: 0}
+    - target: {fileID: 6372440480178008216, guid: 17cbb3dc8c7667c47a636e9d82789233, type: 3}
+      propertyPath: dialogueDataList.Array.data[36].dialogueSourceSprite
+      value: 
+      objectReference: {fileID: -2143529013, guid: 35fd3d428d9241a44bc27b11a2ce13e8, type: 3}
+    - target: {fileID: 6372440480178008216, guid: 17cbb3dc8c7667c47a636e9d82789233, type: 3}
+      propertyPath: dialogueDataList.Array.data[34].dialogueContentString
+      value: A microphone? Haha, I will put it on my belt
+      objectReference: {fileID: 0}
+    - target: {fileID: 6372440480178008216, guid: 17cbb3dc8c7667c47a636e9d82789233, type: 3}
+      propertyPath: dialogueDataList.Array.data[36].dialogueContentString
+      value: An old microphone? Haha, I will put it on my belt
+      objectReference: {fileID: 0}
     - target: {fileID: 6372440480178008216, guid: 17cbb3dc8c7667c47a636e9d82789233, type: 3}
       propertyPath: onDialogueActivated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -6203,6 +6243,18 @@ PrefabInstance:
     - target: {fileID: 6421200428210921585, guid: 17cbb3dc8c7667c47a636e9d82789233, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8037350995681730448, guid: 17cbb3dc8c7667c47a636e9d82789233, type: 3}
+      propertyPath: keysToShowList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8037350995681730448, guid: 17cbb3dc8c7667c47a636e9d82789233, type: 3}
+      propertyPath: keysToShowList.Array.data[0]
+      value: Knob
+      objectReference: {fileID: 0}
+    - target: {fileID: 8037350995681730448, guid: 17cbb3dc8c7667c47a636e9d82789233, type: 3}
+      propertyPath: keysToShowList.Array.data[1]
+      value: OldMicrophone
       objectReference: {fileID: 0}
     - target: {fileID: 8572392321279800097, guid: 17cbb3dc8c7667c47a636e9d82789233, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
